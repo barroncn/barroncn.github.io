@@ -1,0 +1,59 @@
+.has-bg-img {
+    background: url("photos/head13.jpg")center center;
+    background-size: cover;
+}
+
+.wide-spacing {
+    letter-spacing: 2px;
+}
+
+.navigation {
+    margin-top: -35px;
+}
+
+.w3-card-2 {
+    height: 350px;
+}
+
+.card {
+    height: 100%;
+    border-radius: 5px;
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
+.card-footer {
+    margin-top: auto;
+}
+
+.aboutMe {
+    width: 100%;
+}
+
+.ab {
+    padding: 5px;
+}
+
+#myPic {
+    margin-right: 25px;
+}
+
+.smLink {
+    padding: 5px;
+}
+
+.connectwithme {
+    width: 100vw;
+}
+
+.someLinks {
+    width: 30%;
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: -7px 11px 25px -9px rgba(0, 0, 0, 1);
+}

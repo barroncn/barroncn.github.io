@@ -1,44 +1,225 @@
-<html lang="en-us">
-<head>	
-	<meta charset="utf-8">
-	<title>Caitlin Barron's Portfolio</title>
-	<script src="https://use.fontawesome.com/8bd2ed03e6.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<div class="clearfix">
-				<h1>Caitlin Barron</h1>
+<!DOCTYPE html>
+<html>
 
-				<nav class="menu">
-					<a href="index.html" id="about">About</a>
-					<a href="portfolio.html" id="portfolio">Portfolio</a>
-					<a href="contact.html" id="contact">Contact</a>
-				</nav>
-			</div>
-		</header>	
-		<br>	
-		<div>
-			<section id="aboutmepicbox" class="clearfix">
-				<h2>About Me</h2>
-				<img id="biopic" src="assets/images/Profile_Pic.jpeg" alt="Caitlin's Picture">	
-				<p id="aboutme"> 
-					I recently graduated from UNC Charlotte with a degree in Mathematics, a minor in Chemistry, and a concentration in Actuarial Science. As I trudged through an internship with a life insurance company, I realized I was on the wrong career path. I want to utilize my creativity and problem solving skills. I want a career that is challenging and dynamic. After talking to a few different people and doing lots of research, I decided to learn how to code! When I'm not practicing coding, you can find me outside. I love hiking, kayaking, and travelling to new places!			
-				</p>
-			</section>
-			<div class="connectwithme">
-				<h3>Connect With Me</h3>
-				<a href="https://www.linkedin.com/in/caitlin-barron" target="_blank"><img src="assets/images/linkedin-128.png" alt="Linked In Icon" width="50" height="50"></a>
-				<a href="https://github.com/barroncn" target="_blank"><img id="gith" src="assets/images/github-128.png" alt="Git Hub Icon" width="50" height="50"></a>
-				<a href="https://stackoverflow.com/users/8585690/cbarron?tab=profile" target="_blank"><img src="assets/images/overflow-128.png" alt="Stack Overflow Icon" width="50" height="50"></a>
-			</div>
-		</div>
-		<div class=push></div>
-	</div>
-	<footer class="footer">
-		<p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Caitlin Barron</p>
-	</footer>
+<head>
+  <meta lang="en-us" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Caitlin Barron</title>
+
+  <!--Bulma CSS Framework-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" type="text/css" />
+  <!--Font-Awesome CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <!--Custom Stylesheet, path populated via handlebars-->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+</head>
+
+<body class="Site">
+
+  <!--Header-->
+  <header class="header">
+    <section class="hero has-bg-img is-large">
+      <div class="hero-body has-text-centered">
+        <div class="container title has-text-light has-text-wight-bold is-size-1 has-text-centered is-vcentered  wide-spacing">
+          <h3><span id="homeLink">CAITLIN BARRON</span></h3>
+          <p class="is-size-4 has-text-weight-light">Full Stack Developer</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="Site-content container">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--ABOUT ME-->
+    <h1 class="has-text-centered title is-size-3 has-text-weight-light wide-spacing">ABOUT ME</h1>
+    <div id="about">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="card aboutMe has-shadow">
+          <div class="card-content">
+            <img id="myPic" class="card-image is-pulled-left" src="photos/profile.jpeg" alt="Profile Picture" width="200">
+            <p class="is-size-4 has-text-weight-light ab">I recently graduated from UNC Charlotte with a degree in Mathematics, a minor in Chemistry, and a concentration in Actuarial Science. As I trudged through an internship with a life insurance company, I realized I was on the wrong career path.</p>
+            <p class="is-size-4 has-text-weight-light ab">I want to utilize my creativity and problem solving skills. I want a career that is challenging and dynamic. After talking to a few different people and doing lots of research, I decided to learn how to code! When I'm not practicing coding
+              or knee deep in documentation, you can find me outside. I love hiking, kayaking, and travelling to new places.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <!--PORTFOLIO-->
+    <h1 class="has-text-centered title is-size-3 has-text-weight-light wide-spacing">PORTFOLIO</h1>
+    <br>
+    <br>
+    <br>
+    <div id="portfolio"></div>
+    <div class="columns has-text-centered is-multiline">
+      <!--MEAL CRAVE-->
+      <div class="column is-one-third-tablet">
+        <div class="card shadow">
+          <div class="card-image">
+            <figure class="image">
+              <img src="photos/mealCrave.png" alt="Meal Crave Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p>This app displays the best meals in town. Users satisfy meal cravings by browsing uploaded meal photos.</p>
+              <p><span class="is-italic">Technology Used:</span> JavaScript | jQuery | MySQL | Sequelize | Handlebars.js | Express.js | Node.js | Bulma</p>
+            </div>
+          </div>
+          <footer class="card-footer has-text-centered">
+            <a class="card-footer-item" href="https://meal-crave.herokuapp.com/" target="_blank">Website </a><a class="card-footer-item" href="https://github.com/barroncn/mealCrave" target="_blank"> Github</a>
+          </footer>
+        </div>
+      </div>
+      <!--RIDE OR DRIVE-->
+      <div class="column is-one-third-tablet">
+        <div class="card shadow">
+          <div class="card-image">
+            <figure class="image">
+              <img src="photos/RideOrDrive.png" alt="Ride or Drive Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p>User's compare the cost and time it would take to drive themselves to the cost of a rideshare service, Lyft or Uber.</p>
+              <p>Technology Used: jQuery | JavaScript | Bootstrap | Firebase | AJAX</p>
+            </div>
+          </div>
+          <footer class="card-footer has-text-centered">
+            <a class="card-footer-item" href="https://barroncn.github.io/Ryde-or-Drive/" target="_blank">Website </a><a class="card-footer-item" href="https://github.com/barroncn/Ryde-or-Drive" target="_blank"> Github</a>
+          </footer>
+        </div>
+      </div>
+      <!--LIRI NODE APP-->
+      <div class="column is-one-third-tablet">
+        <div class="card shadow">
+          <div class="card-image">
+            <figure class="image">
+              <img src="photos/NodeJS.png" alt="NodeJS Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p>An Node.js application that uses API's to get specific Tweets and song information in the command line.</p>
+              <p><span class="is-italic">Technology Used:</span> Node.js | Inquirer | AJAX</p>
+            </div>
+          </div>
+          <footer class="card-footer has-text-centered">
+            <a class="card-footer-item" href="https://github.com/barroncn/liri-node-app" target="_blank">Github</a>
+          </footer>
+        </div>
+      </div>
+      <!--NPR SCRAPER-->
+      <div class="column is-one-third-tablet">
+        <div class="card shadow">
+          <div class="card-image">
+            <figure class="image">
+              <img src="photos/NPRscrape.png" alt="Scraper Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p>This app allows users to scrape the NPR Technology News website for the latest articles. Users can save and add notes to articles of interest.</p>
+              <p><span class="is-italic">Technology Used:</span> JavaScript | jQuery | MongoDB | Mongoose | Handlebars.js | Express.js | Node.js | Axios | Bootstrap</p>
+            </div>
+          </div>
+          <footer class="card-footer has-text-centered">
+            <a class="card-footer-item" href="http://still-cliffs-16819.herokuapp.com" target="_blank">Website </a><a class="card-footer-item" href="https://github.com/barroncn/webscraping" target="_blank"> Github</a>
+          </footer>
+        </div>
+      </div>
+      <!--RPG GAME-->
+      <div class="column is-one-third-tablet">
+        <div class="card shadow">
+          <div class="card-image">
+            <figure class="image">
+              <img src="photos/RPGgame.png" alt="RPG Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p>This app is a simple logic game where the user must choose opponents in a stragegic order for a win to be possible.</p>
+
+              <p>Technology Used: jQuery | JavaScript</p>
+            </div>
+          </div>
+          <footer class="card-footer has-text-centered">
+            <a class="card-footer-item" href="https://barroncn.github.io/Week-4-Game/" target="_blank">Website </a><a class="card-footer-item" href="https://github.com/barroncn/Week-4-Game" target="_blank"> Github</a>
+          </footer>
+        </div>
+      </div>
+      <!--FRIEND FINDER-->
+      <div class="column is-one-third-tablet">
+        <div class="card shadow">
+          <div class="card-image">
+            <figure class="image">
+              <img src="photos/FriendFinder.png" alt="Friend Finder Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <p>This app provides gives the user a survey and then matches them with other survey-takers according to similar answers.</p>
+              <p><span class="is-italic">Technology Used:</span> Node.js | Express.js | Bootstrap | JavaScript | jQuery</p>
+            </div>
+          </div>
+          <footer class="card-footer has-text-centered">
+            <a class="card-footer-item" href="https://stark-atoll-94774.herokuapp.com/" target="_blank">Website </a><a class="card-footer-item" href="https://github.com/barroncn/friend-finder" target="_blank"> Github</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <!--CONNECT WITH ME-->
+    <h1 class="has-text-centered title is-size-3 has-text-weight-light wide-spacing">CONNECT WITH ME</h1>
+    <br>
+
+    <div class="columns">
+      <div class="column has-text-centered">
+        <a href="https://www.linkedin.com/in/caitlin-barron" target="_blank" class="thumbnail">
+                  <img src="photos/linkedin-128.png" alt="Linked In Link">
+                </a>
+        <a href="https://github.com/barroncn" target="_blank" class="thumbnail">
+                  <img src="photos/github-128.png" alt="GitHub Link">
+                </a>
+        <a href="https://stackoverflow.com/users/8585690/cbarron?tab=profile" target="_blank" class="thumbnail">
+                  <img src="photos/overflow-128.png" alt="Stack Overflow Link">
+                </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </main>
 </body>
+
 </html>
