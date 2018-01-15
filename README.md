@@ -1,4 +1,4 @@
-Personal Portfolio 
+# Personal Portfolio 
 
 [Check it out here!](https://barroncn.github.io/)  (it's still a work in progress...)
 
