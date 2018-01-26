@@ -1,5 +1,5 @@
 .has-bg-img {
-    background: url("photos/head13.jpg")center center;
+    background: url("photos/mountains.jpg")center center;
     background-size: cover;
 }
 
@@ -18,8 +18,6 @@
 .card {
     height: 100%;
     border-radius: 5px;
-    /*display: -webkit-box;*/
-    /*display: -ms-flexbox;*/
     display: flex;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
@@ -63,6 +61,24 @@
     border-radius: 20px;
 }
 
-/*.navigation{*/
-/*    border: none;*/
-/*}*/
+.blacktext {
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.charlottePic {
+    float: left;
+    width: 500px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-wrapper {
+    width: 100vw;
+}
+
+.blacktext:hover {
+    text-decoration: none;
+}
