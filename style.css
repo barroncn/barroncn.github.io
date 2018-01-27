@@ -84,6 +84,15 @@
     text-decoration: none;
 }
 
+@media screen and (max-width:768px) {
+    .shadow {
+
+        margin: auto;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
 @media screen and (max-width:761px) {
     .charlottePic {
         float: none;
@@ -104,6 +113,13 @@
         float: none;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    .shadow {
+
+        margin: auto;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .ab {
