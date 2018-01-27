@@ -91,9 +91,7 @@
         margin-left: 75px;
         margin-right: 75px;
     }
-}
 
-@media screen and (max-width:761px) {
     .charlottePic {
         float: none;
         margin: auto;
