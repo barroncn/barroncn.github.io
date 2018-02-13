@@ -1,6 +1,26 @@
+/*.parallax {*/
+
+/*    background-image: url("photos/mountains.jpg");*/
+
+/*    height: 700px;*/
+
+/*    background-attachment: fixed;*/
+
+/*    background-position: center;*/
+
+/*    background-repeat: no-repeat;*/
+
+/*    background-size: cover;*/
+
+/*}*/
+
 .has-bg-img {
+
+
     background: url("photos/mountains.jpg")center center;
+
     background-size: cover;
+
 }
 
 .wide-spacing {
@@ -85,6 +105,7 @@
 }
 
 @media screen and (max-width:768px) {
+
     .shadow {
 
         margin: auto;
